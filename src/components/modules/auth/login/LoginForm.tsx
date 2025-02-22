@@ -55,7 +55,7 @@ export default function LoginForm() {
         if (redirect) {
           router.push(redirect);
         } else {
-          router.push("/");
+          router.push("/profile");
         }
       } else {
         toast.error(res?.message);
