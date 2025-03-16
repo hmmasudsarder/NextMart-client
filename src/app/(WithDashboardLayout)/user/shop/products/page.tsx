@@ -2,10 +2,10 @@ import ManageProducts from "@/components/modules/shop/product";
 import { getAllProducts } from "@/services/Product";
 
 const ManageProductsPage = async () => {
-  const { data } = await getAllProducts();
+  const { data, meta } = await getAllProducts();
   return (
     <div>
-      <ManageProducts products={data} />
+      <ManageProducts products={data} meta={meta} />
     </div>
   );
 };
